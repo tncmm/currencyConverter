@@ -36,10 +36,8 @@ class CreateActivityController extends StateNotifier<HomeViewStateModel> {
           ),
         ) {
     getLocalCurrencyList();
-
     getCurrencyRate();
   }
-
   final Ref ref;
 
   getLocalCurrencyList() async {

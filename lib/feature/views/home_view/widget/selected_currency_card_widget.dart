@@ -71,8 +71,7 @@ class SelectedCurrencyCard extends ConsumerWidget {
                 borderRadius: context.borderRadiusMedium,
               ),
               child: Padding(
-                padding:
-                    context.paddingLowHorizontal + context.paddingLowTop * 0.1,
+                padding: context.paddingLowHorizontal,
                 child: Row(
                   children: [
                     Expanded(
