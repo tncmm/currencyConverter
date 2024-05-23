@@ -114,7 +114,7 @@ class CreateActivityController extends StateNotifier<HomeViewStateModel> {
     return value.toStringAsFixed(4);
   }
 
-  void changeCurrencyValue(int newValue) {
+  void changeCurrencyValue(double newValue) {
     state = state.copyWith(currencyValue: newValue);
   }
 

@@ -22,7 +22,6 @@ class ThemeNotifier extends StateNotifier<ThemeData> {
 
     isDarkTheme = prefs.getBool('themeKey') ?? false;
 
-    isDarkTheme = true;
     state = isDarkTheme
         ? AppTheme.instance.darkTheme
         : AppTheme.instance.lightTheme;
@@ -32,7 +31,6 @@ class ThemeNotifier extends StateNotifier<ThemeData> {
     isDarkTheme = !isDarkTheme;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('themeKey', isDarkTheme);
-    //await box.put(HiveService.instance.themeKey, isDarkTheme);
     state = isDarkTheme
         ? AppTheme.instance.darkTheme
         : AppTheme.instance.lightTheme;

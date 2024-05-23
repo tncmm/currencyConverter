@@ -23,7 +23,7 @@ class HomeView extends ConsumerWidget {
       backgroundColor: context.colors.background,
       appBar: AppBar(
         title: const CurrencyConverterTextWidget(
-          text: "Currency Converter",
+          text: "Convert Currency Plus",
           widgetType: CurrencyConverterTextStyleEnum.s16w600,
         ),
         elevation: 0,

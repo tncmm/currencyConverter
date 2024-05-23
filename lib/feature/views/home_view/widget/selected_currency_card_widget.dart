@@ -4,6 +4,7 @@ import 'package:currency_converter/core/widget/text_widget.dart';
 import 'package:currency_converter/feature/views/home_view/home_view_controller.dart';
 import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class SelectedCurrencyCard extends ConsumerWidget {
@@ -76,14 +77,18 @@ class SelectedCurrencyCard extends ConsumerWidget {
                   children: [
                     Expanded(
                       child: TextField(
+                        keyboardType: TextInputType.number,
                         maxLength: 7,
                         decoration: const InputDecoration(
                             border: InputBorder.none,
                             counter: SizedBox.shrink()),
                         controller: controller.currencyTextController,
+                        inputFormatters: [
+                          FilteringTextInputFormatter.digitsOnly,
+                        ],
                         onChanged: (value) {
                           controllerNotifier.changeCurrencyValue(
-                              int.parse(value == "" ? "1" : value));
+                              double.parse(value == "" ? "1" : value));
                         },
                       ),
                     ),

@@ -18,7 +18,7 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$HomeViewStateModel {
   TextEditingController get currencyTextController =>
       throw _privateConstructorUsedError;
-  int get currencyValue => throw _privateConstructorUsedError;
+  double get currencyValue => throw _privateConstructorUsedError;
   List<CurrencyModel> get currencyList => throw _privateConstructorUsedError;
   Currency get selectedCurrency => throw _privateConstructorUsedError;
   dynamic get currencyData => throw _privateConstructorUsedError;
@@ -37,7 +37,7 @@ abstract class $HomeViewStateModelCopyWith<$Res> {
   @useResult
   $Res call(
       {TextEditingController currencyTextController,
-      int currencyValue,
+      double currencyValue,
       List<CurrencyModel> currencyList,
       Currency selectedCurrency,
       dynamic currencyData,
@@ -72,7 +72,7 @@ class _$HomeViewStateModelCopyWithImpl<$Res, $Val extends HomeViewStateModel>
       currencyValue: null == currencyValue
           ? _value.currencyValue
           : currencyValue // ignore: cast_nullable_to_non_nullable
-              as int,
+              as double,
       currencyList: null == currencyList
           ? _value.currencyList
           : currencyList // ignore: cast_nullable_to_non_nullable
@@ -103,7 +103,7 @@ abstract class _$$HomeViewStateModelImplCopyWith<$Res>
   @useResult
   $Res call(
       {TextEditingController currencyTextController,
-      int currencyValue,
+      double currencyValue,
       List<CurrencyModel> currencyList,
       Currency selectedCurrency,
       dynamic currencyData,
@@ -136,7 +136,7 @@ class __$$HomeViewStateModelImplCopyWithImpl<$Res>
       currencyValue: null == currencyValue
           ? _value.currencyValue
           : currencyValue // ignore: cast_nullable_to_non_nullable
-              as int,
+              as double,
       currencyList: null == currencyList
           ? _value._currencyList
           : currencyList // ignore: cast_nullable_to_non_nullable
@@ -173,7 +173,7 @@ class _$HomeViewStateModelImpl implements _HomeViewStateModel {
   final TextEditingController currencyTextController;
   @override
   @JsonKey()
-  final int currencyValue;
+  final double currencyValue;
   final List<CurrencyModel> _currencyList;
   @override
   @JsonKey()
@@ -236,7 +236,7 @@ class _$HomeViewStateModelImpl implements _HomeViewStateModel {
 abstract class _HomeViewStateModel implements HomeViewStateModel {
   const factory _HomeViewStateModel(
       {required final TextEditingController currencyTextController,
-      final int currencyValue,
+      final double currencyValue,
       final List<CurrencyModel> currencyList,
       required final Currency selectedCurrency,
       final dynamic currencyData,
@@ -245,7 +245,7 @@ abstract class _HomeViewStateModel implements HomeViewStateModel {
   @override
   TextEditingController get currencyTextController;
   @override
-  int get currencyValue;
+  double get currencyValue;
   @override
   List<CurrencyModel> get currencyList;
   @override

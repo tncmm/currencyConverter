@@ -11,7 +11,7 @@ part 'home_view_state_model.freezed.dart';
 class HomeViewStateModel with _$HomeViewStateModel {
   const factory HomeViewStateModel({
     required TextEditingController currencyTextController,
-    @Default(1) int currencyValue,
+    @Default(1) double currencyValue,
     @Default([]) List<CurrencyModel> currencyList,
     required Currency selectedCurrency,
     dynamic currencyData,
