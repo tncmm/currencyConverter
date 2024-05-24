@@ -230,18 +230,6 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "hive",
-      "rootUri": "file:///Users/mustafatunc/.pub-cache/hosted/pub.dev/hive-2.2.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "hive_generator",
-      "rootUri": "file:///Users/mustafatunc/.pub-cache/hosted/pub.dev/hive_generator-2.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "http",
       "rootUri": "file:///Users/mustafatunc/.pub-cache/hosted/pub.dev/http-1.1.0",
       "packageUri": "lib/",
@@ -584,7 +572,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2024-05-23T13:09:29.213805Z",
+  "generated": "2024-05-24T20:55:19.023064Z",
   "generator": "pub",
   "generatorVersion": "3.1.3"
 }
